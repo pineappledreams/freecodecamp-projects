@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Survey page!</title>
+    <html lang="en">
+    <meta charset="UTF-8">
+    <meta name="description" content="Please fill out our survey!">
+    <meta name="keywords" content="Survey">
+    <meta name="author" content="pineappledreams">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
+    <link rel="stylesheet" type="text/css"  href="survey.css">
+</head>
+
+<body>
+    <div id=main>
+        <h1 id="title">Please take our survey!</h1>
+        <div id="form-outer" method="GET" action="https://crossorigin.me/https://freecodecamp.com">
+            <p id="description">Please tell us how we can do better!</p>
+            <form id="survey-form">
+                <div>
+                    <label id="name-label">Please enter your name:
+                        <input type="text" name="name" id="name" class="input-field" placeholder="Your name" required>
+                    </label>
+                </div>
+                <div>
+                    <label id="email-label">Please enter your e-mail:
+                        <input type="email" class="input-field" id="email" name="email" placeholder="E-mail" required>
+                    </label>
+                </div>
+                <div><label id="number-label">What is your favourite number? (Between 0 to 10)
+                        <input type="number" class="input-field" id="number" name="number" placeholder="0 to 10" min="0"
+                            max="10" required>
+                    </label>
+                </div>
+                <div>Please choose a word that describes you well:
+                    <select id="dropdown">
+                        <option disabled value>Select a word</option>
+                        <option value="Unique">Unique</option>
+                        <option value="Funny">Funny</option>
+                        <option value="Hot">Hot</option>
+                        <option value="Cute">Cute</option>
+                        <option value="Sexy">Sexy</option>
+                    </select></div>
+                <div>Which radio do you own?</div>
+                <ul style="list-style: none;">
+                    <li class="radio"><label>Sony<input name="radio-buttons" value="1" type="radio"></label></li>
+                    <li class="radio"><label>Ham<input name="radio-buttons" value="2" type="radio"></label></li>
+                    <li class="radio"><label>Not sure<input name="radio-buttons" value="3" type="radio"></label></li>
+                </ul>
+                <div>Which dubs have you achieved in your life? (Choose as many as you have achieved)</div>
+                <ul id="preferences" style="list-style: none;">
+                    <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="dubs">00</label></li>
+                    <li class="checkbox"><input name="prefer" value="2" type="checkbox" class="dubs">11</li>
+                    <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="dubs">22</label></li>
+                    <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="dubs">33</label></li>
+                    <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="dubs">44</label></li>
+                    <li class="checkbox"><label><input name="prefer" value="6" type="checkbox" class="dubs">55</label></li>
+                    <li class="checkbox"><label><input name="prefer" value="7" type="checkbox" class="dubs">66</label></li>
+                    <li class="checkbox"><label><input name="prefer" value="8" type="checkbox" class="dubs">77</label></li>
+                    <li class="checkbox"><label><input name="prefer" value="9" type="checkbox" class="dubs">88</label></li>
+                    <li class="checkbox"><label><input name="prefer" value="10" type="checkbox" class="dubs">99</label></li>
+                </ul>
+                <div>Please write here any additional comments:</div>
+                <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment"
+                    placeholder="Enter your comment here..."></textarea>
+                <div><button id="submit" type="submit">SUBMIT!</button></div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
